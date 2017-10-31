@@ -1,0 +1,70 @@
+# AppSec Designer (TM) Data Model
+# Author: John M. Willis, Turnaround Security, Inc.
+
+# This is a starting point for development of an open source version, subject to the Apache 2 license (see NOTICE).
+
+# Data below is a truncated consolidation of the files used to create the initial neo4j database.
+
+# For those new to neo4j, there are two types of files: nodes, and relationship (defines relationships between nodes).
+
+# See Queries.txt for example neo4j queries using this data.
+
+# Example of two physical instances of the unique component TLS created by user (node)
+NODE.Instance.csv
+:ID,type,nodeName,:LABEL
+userLogon1,TLS,userLogon1,NodeName
+userLogon2,TLS,userLogon2,NodeName
+
+# Example of two physical instances of the unique component TLS created by user (relationship)
+REL.Instance.csv
+:START_ID,:END_ID,:TYPE
+userLogon1,TLS,INSTANCE_TYPE
+userLogon2,TLS,INSTANCE_TYPE
+
+# Define unique components. For starters, TLS represents a standard mutual authentication implementation of TLS
+# Note: Only a single component is defined in the initial data load. Many more need to be created
+NODE.Nodes.csv
+:ID,type,:LABEL
+TLS,TLS,Node
+
+# Define the security goals, or packages, that apply to the unique security component/node
+# Note: Only a single component is defined in the initial data load. Many more need to be created
+REL.NodeTypes.csv
+:START_ID,nodeType,pkg,:END_ID,:TYPE
+TLS,TLS,AURam,AURam,NODE_DEPENDS
+
+# Define name of security goal, or package, of security functional requirements
+# AURam is first letter of each word of Preschern Goal 
+# Note: Initial data load only includes limited set of Goals from Preschern
+NODE.Packages.csv
+:ID,goal,:LABEL
+AURam,Authenticate Users: Robust authentication mechanism,Goal
+
+# Define specific security functional requirements (SFRs) that are contained in the security requirements package (a/k/a Goal)
+# Note: Initial data load only includes limited set of Goals from Preschern
+# Initial SFRs are from the Common Criteria (complete set)
+REL.Packages.csv
+:START_ID,pkg,pkgInclSFR,:END_ID,:TYPE
+AURam,AURam,FIA_UAU.7,FIA_UAU.7,PKG_INCLUDES
+AURam,AURam,FIA_UAU.3,FIA_UAU.3,PKG_INCLUDES
+
+# Define dependencies of which SFRs depend on which SFRs
+# Initial SFR dependencies are from the Common Criteria (complete set)
+REL.Dependencies.csv
+:START_ID,dependentSFR,:END_ID,:TYPE
+FPT_RCV.1,AGD_OPE.1,AGD_OPE.1,SFR_DEPENDS
+
+# This is where the requirement text goes. This is where the organization could define its own text
+# Initial data load only contains text for the TLS component, although all SFRs are loaded
+NODE.RequirementText.csv
+:ID,requirementText,sfr,:LABEL
+AGD_OPE.1,,AGD_OPE.1,SFR
+FCS_CKM.2,The TSF shall distribute cryptographic keys in *** [assignment: list of standards].,FCS_CKM.2,SFR
+FCS_CKM.3,,FCS_CKM.3,SFR
+
+# This was required to make the requirements text display (edge?)
+# All Common Criteria SFRs are included
+REL.ReqtText.csv
+:START_ID,endSFR,:END_ID,:TYPE
+AGD_OPE.1,AGD_OPE.1,AGD_OPE.1,HAS_TEXT
+

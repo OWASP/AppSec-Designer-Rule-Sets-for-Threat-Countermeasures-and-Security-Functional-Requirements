@@ -1,0 +1,7 @@
+README
+
+This project is for defining a common set of security components based upon security requirements packages, consisting of security functional requirements (SFRs) which address various security goals/tactics/objectives. In addition, this project is for defining a set of threat/attack tree countermeasures, based upon technology platform, specifying the aforementioned applicable security components. The initial set of SFR data includes Common Criteria SFRs, and their interdependencies. Using neo4j, the physical instances of each security component may be modeled. The logical instance of each security component may then be expanded to report all dependent SFRs.
+
+While initially developed for use with AppSec Designer (TM) from Turnaround Security, these data form a critical starting point for developing a robust community-driven set of rules, or libraries, for use in modeling the archtecture and design of the security components of applications. AppSec Designer (TM) is not required for using this data, as it may be entered and reported upon directly using neo4j.
+
+For a conceptual overview of how AppSec Designer (TM) uses this data, see the video at https://www.kickstarter.com/projects/appsecdesigner/appsec-designer-tm, and the earlier PowerPoint presentation "Enumerating software security design flaws throughout the SSDLC".

@@ -1,0 +1,7 @@
+:ID,pkg,goal,:LABEL
+AURam,AURam,Authenticate Users: Robust authentication mechanism,Goal
+AUPas,AUPas,Authenticate Users: Protected authentication session,Goal
+AUPasST,AUPasST,Authenticate Users: Protected authentication session: Session Termination,Goal
+AUPasLA,AUPasLA,Authenticate Users: Protected authentication session: Limit Access,Goal
+MDCPcotd,MDCPcotd,Maintain Data Confidentiality: Protected confidentiality of transmitted data,Goal
+MIPioetd,MIPioetd,Maintain Integrity: Protected integrity of externally transmitted data,Goal

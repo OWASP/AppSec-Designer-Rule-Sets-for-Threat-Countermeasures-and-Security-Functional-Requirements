@@ -1,0 +1,15 @@
+QUERIES - Examples
+
+# Returns everyting starting at TLS
+MATCH (a:Node)-[NODE_DEPENDS]->(b)-[PKG_INCLUDES]->(c)-[SFR_DEPENDS]->(d)  RETURN a, b, c, d
+
+# Returns everything, including multiple userLogon instances pointing to same TLS
+MATCH (a:NodeName)-[INSTANCE_TYPE]->(b)-[NODE_DEPENDS]->(c)-[PKG_INCLUDES]->(d)-[SFR_DEPENDS]->(e)  RETURN a, b, c, d, e
+
+# Returns Requirement Text (not deduped), including multiple userLogon instances pointing to same TLS
+MATCH (a:NodeName)-[INSTANCE_TYPE]->(b)-[NODE_DEPENDS]->(c)-[PKG_INCLUDES]->(d)-[SFR_DEPENDS]->(e)  RETURN d, e
+
+# Set NodeName while traversing - NOT WORKING YET
+MATCH (a:NodeName)-[INSTANCE_TYPE]->(b)-[NODE_DEPENDS]->(c)-[PKG_INCLUDES]->(d)-[SFR_DEPENDS]->(e)  
+SET e :NodeName
+RETURN a, b, c, d, e

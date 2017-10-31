@@ -1,0 +1,136 @@
+:ID,requirementText,sfr,:LABEL
+AGD_OPE.1,,AGD_OPE.1,SFR
+FAU_ARP.1,,FAU_ARP.1,SFR
+FAU_GEN.1,,FAU_GEN.1,SFR
+FAU_GEN.2,,FAU_GEN.2,SFR
+FAU_SAA.1,,FAU_SAA.1,SFR
+FAU_SAA.2,,FAU_SAA.2,SFR
+FAU_SAA.3,,FAU_SAA.3,SFR
+FAU_SAA.4,,FAU_SAA.4,SFR
+FAU_SAR.1,,FAU_SAR.1,SFR
+FAU_SAR.2,,FAU_SAR.2,SFR
+FAU_SAR.3,,FAU_SAR.3,SFR
+FAU_SEL.1,,FAU_SEL.1,SFR
+FAU_STG.1,,FAU_STG.1,SFR
+FAU_STG.2,,FAU_STG.2,SFR
+FAU_STG.3,,FAU_STG.3,SFR
+FAU_STG.4,,FAU_STG.4,SFR
+FCO_NRO.1,,FCO_NRO.1,SFR
+FCO_NRO.2,,FCO_NRO.2,SFR
+FCO_NRR.1,,FCO_NRR.1,SFR
+FCO_NRR.2,,FCO_NRR.2,SFR
+FCS_CKM.1,,FCS_CKM.1,SFR
+FCS_CKM.2,The TSF shall distribute cryptographic keys in accordance with a specified cryptographic key distribution method [assignment: cryptographic key distribution method] that meets the following: [assignment: list of standards].,FCS_CKM.2,SFR
+FCS_CKM.3,,FCS_CKM.3,SFR
+FCS_CKM.4,The TSF shall destroy cryptographic keys in accordance with a specified cryptographic key destruction method [assignment: cryptographic key destruction method] that meets the following: [assignment: list of standards].,FCS_CKM.4,SFR
+FCS_COP.1,,FCS_COP.1,SFR
+FDP_ACC.1,,FDP_ACC.1,SFR
+FDP_ACC.2,,FDP_ACC.2,SFR
+FDP_ACF.1,,FDP_ACF.1,SFR
+FDP_DAU.1,,FDP_DAU.1,SFR
+FDP_DAU.2,,FDP_DAU.2,SFR
+FDP_ETC.1,,FDP_ETC.1,SFR
+FDP_ETC.2,,FDP_ETC.2,SFR
+FDP_IFC.1,,FDP_IFC.1,SFR
+FDP_IFC.2,,FDP_IFC.2,SFR
+FDP_IFF.1,,FDP_IFF.1,SFR
+FDP_IFF.2,,FDP_IFF.2,SFR
+FDP_IFF.3,,FDP_IFF.3,SFR
+FDP_IFF.4,,FDP_IFF.4,SFR
+FDP_IFF.5,,FDP_IFF.5,SFR
+FDP_IFF.6,,FDP_IFF.6,SFR
+FDP_ITC.1,,FDP_ITC.1,SFR
+FDP_ITC.2,,FDP_ITC.2,SFR
+FDP_ITT.1,"The TSF shall enforce the [assignment: access control SFP(s) and/or information flow control SFP(s)] to prevent the [selection: disclosure, modification, loss of use] of user data when it is transmitted between physically-separated parts of the TOE.",FDP_ITT.1,SFR
+FDP_ITT.2,,FDP_ITT.2,SFR
+FDP_ITT.3,,FDP_ITT.3,SFR
+FDP_ITT.4,,FDP_ITT.4,SFR
+FDP_RIP.1,,FDP_RIP.1,SFR
+FDP_RIP.2,,FDP_RIP.2,SFR
+FDP_ROL.1,,FDP_ROL.1,SFR
+FDP_ROL.2,,FDP_ROL.2,SFR
+FDP_SDI.1,,FDP_SDI.1,SFR
+FDP_SDI.2,,FDP_SDI.2,SFR
+FDP_UCT.1,"The TSF shall enforce the [assignment: access control SFP(s) and/or information flow control SFP(s)] to be able to [selection: transmit, receive] user data in a manner protected from unauthorised disclosure.",FDP_UCT.1,SFR
+FDP_UIT.1,"FDP_UIT.1.1: The TSF shall enforce the [assignment: access control SFP(s) and/or information flow control SFP(s)] to be able to [selection: transmit, receive] user data in a manner protected from [selection: modification, deletion, insertion, replay] errors. FDP_UIT.1.2: The TSF shall be able to determine on receipt of user data, whether [selection: modification, deletion, insertion, replay] has occurred.",FDP_UIT.1,SFR
+FDP_UIT.2,The TSF shall enforce the [assignment: access control SFP(s) and/or information flow control SFP(s)] to be able to recover from [assignment: list of recoverable errors] with the help of the source trusted IT product.,FDP_UIT.2,SFR
+FDP_UIT.3,The TSF shall enforce the [assignment: access control SFP(s) and/or information flow control SFP(s)] to be able to recover from [assignment: list of recoverable errors] without any help from the source trusted IT product.,FDP_UIT.3,SFR
+FIA_AFL.1,"FIA_AFL.1.1 The TSF shall detect when [selection: [assignment: positive integer number], an administrator configurable positive integer within[assignment: range of acceptable values]] unsuccessful authentication attempts occur related to [assignment: list of authentication events]. FIA_AFL.1.2 When the defined number of unsuccessful authentication attempts has been [selection: met, surpassed], the TSF shall [assignment: list of actions].",FIA_AFL.1,SFR
+FIA_ATD.1,,FIA_ATD.1,SFR
+FIA_SOS.1,,FIA_SOS.1,SFR
+FIA_SOS.2,,FIA_SOS.2,SFR
+FIA_UAU.1,FIA_UAU.1.1 The TSF shall allow [assignment: list of TSF mediated actions] on behalf of the user to be performed before the user is authenticated. FIA_UAU.1.2 The TSF shall require each user to be successfully authenticated before allowing any other TSF-mediated actions on behalf of that user.,FIA_UAU.1,SFR
+FIA_UAU.2,,FIA_UAU.2,SFR
+FIA_UAU.3,"FIA_UAU.3.1 The TSF shall [selection: detect, prevent] use of authentication data that has been forged by any user of the TSF. FIA_UAU.3.2 The TSF shall [selection: detect, prevent] use of authentication data that has been copied from any other user of the TSF.",FIA_UAU.3,SFR
+FIA_UAU.4,The TSF shall prevent reuse of authentication data related to [assignment: identified authentication mechanism(s)].,FIA_UAU.4,SFR
+FIA_UAU.5,,FIA_UAU.5,SFR
+FIA_UAU.6,The TSF shall re-authenticate the user under the conditions [assignment: list of conditions under which re-authentication is required].,FIA_UAU.6,SFR
+FIA_UAU.7,The TSF shall provide only [assignment: list of feedback] to the user while the authentication is in progress.,FIA_UAU.7,SFR
+FIA_UID.1,FIA_UID.1.1 The TSF shall allow [assignment: list of TSF-mediated actions] on behalf of the user to be performed before the user is identified. FIA_UID.1.2 The TSF shall require each user to be successfully identified before allowing any other TSF-mediated actions on behalf of that user.,FIA_UID.1,SFR
+FIA_UID.2,,FIA_UID.2,SFR
+FIA_USB.1,,FIA_USB.1,SFR
+FMT_MOF.1,,FMT_MOF.1,SFR
+FMT_MSA.1,,FMT_MSA.1,SFR
+FMT_MSA.2,,FMT_MSA.2,SFR
+FMT_MSA.3,,FMT_MSA.3,SFR
+FMT_MSA.4,,FMT_MSA.4,SFR
+FMT_MTD.1,,FMT_MTD.1,SFR
+FMT_MTD.2,,FMT_MTD.2,SFR
+FMT_MTD.3,,FMT_MTD.3,SFR
+FMT_REV.1,,FMT_REV.1,SFR
+FMT_SAE.1,"FMT_SAE.1.1 The TSF shall restrict the capability to specify an expiration time for [assignment: list of security attributes for which expiration is to be supported] to [assignment: the authorised identified roles]. FMT_SAE.1.2 For each of these security attributes, the TSF shall be able to [assignment: list of actions to be taken for each security attribute] after the expiration time for the indicated security attribute has passed.",FMT_SAE.1,SFR
+FMT_SMF.1,,FMT_SMF.1,SFR
+FMT_SMR.1,FMT_SMR.1.1 The TSF shall maintain the roles [assignment: the authorised identified roles]. FMT_SMR.1.2 The TSF shall be able to associate users with roles.,FMT_SMR.1,SFR
+FMT_SMR.2,,FMT_SMR.2,SFR
+FMT_SMR.3,,FMT_SMR.3,SFR
+FPR_ANO.1,,FPR_ANO.1,SFR
+FPR_ANO.2,,FPR_ANO.2,SFR
+FPR_PSE.1,,FPR_PSE.1,SFR
+FPR_PSE.2,,FPR_PSE.2,SFR
+FPR_PSE.3,,FPR_PSE.3,SFR
+FPR_UNL.1,,FPR_UNL.1,SFR
+FPR_UNO.1,,FPR_UNO.1,SFR
+FPR_UNO.2,,FPR_UNO.2,SFR
+FPR_UNO.3,,FPR_UNO.3,SFR
+FPR_UNO.4,,FPR_UNO.4,SFR
+FPT_FLS.1,,FPT_FLS.1,SFR
+FPT_ITA.1,,FPT_ITA.1,SFR
+FPT_ITC.1,The TSF shall protect all TSF data transmitted from the TSF to another trusted IT product from unauthorised disclosure during transmission.,FPT_ITC.1,SFR
+FPT_ITI.1,,FPT_ITI.1,SFR
+FPT_ITI.2,,FPT_ITI.2,SFR
+FPT_ITT.1,,FPT_ITT.1,SFR
+FPT_ITT.2,,FPT_ITT.2,SFR
+FPT_ITT.3,,FPT_ITT.3,SFR
+FPT_PHP.1,,FPT_PHP.1,SFR
+FPT_PHP.2,,FPT_PHP.2,SFR
+FPT_PHP.3,,FPT_PHP.3,SFR
+FPT_RCV.1,,FPT_RCV.1,SFR
+FPT_RCV.2,,FPT_RCV.2,SFR
+FPT_RCV.3,,FPT_RCV.3,SFR
+FPT_RCV.4,,FPT_RCV.4,SFR
+FPT_RPL.1,,FPT_RPL.1,SFR
+FPT_SSP.1,,FPT_SSP.1,SFR
+FPT_SSP.2,,FPT_SSP.2,SFR
+FPT_STM.1,The TSF shall be able to provide reliable time stamps.,FPT_STM.1,SFR
+FPT_TDC.1,,FPT_TDC.1,SFR
+FPT_TEE.1,,FPT_TEE.1,SFR
+FPT_TRC.1,,FPT_TRC.1,SFR
+FPT_TST.1,,FPT_TST.1,SFR
+FRU_FLT.1,,FRU_FLT.1,SFR
+FRU_FLT.2,,FRU_FLT.2,SFR
+FRU_PRS.1,,FRU_PRS.1,SFR
+FRU_PRS.2,,FRU_PRS.2,SFR
+FRU_RSA.1,,FRU_RSA.1,SFR
+FRU_RSA.2,,FRU_RSA.2,SFR
+FTA_LSA.1,"The TSF shall restrict the scope of the session security attributes [assignment: session security attributes], based on [assignment: attributes].",FTA_LSA.1,SFR
+FTA_MCS.1,"FTA_MCS.1.1 The TSF shall restrict the maximum number of concurrent sessions that belong to the same user. FTA_MCS.1.2 The TSF shall enforce, by default, a limit of [assignment: default number] sessions per user.",FTA_MCS.1,SFR
+FTA_MCS.2,"FTA_MCS.2.1 The TSF shall restrict the maximum number of concurrent sessions that belong to the same user according to the rules [assignment: rules for the number of maximum concurrent sessions]. FTA_MCS.2.2 The TSF shall enforce, by default, a limit of [assignment: default number] sessions per user.",FTA_MCS.2,SFR
+FTA_SSL.1,"FTA_SSL.1.1 The TSF shall lock an interactive session after [assignment: time interval of user inactivity] by:  a) clearing or overwriting display devices, making the current contents unreadable; b) disabling any activity of the user's data access/display devices other than unlocking the session. FTA_SSL.1.2 The TSF shall require the following events to occur prior to unlocking the session: [assignment: events to occur].",FTA_SSL.1,SFR
+FTA_SSL.2,,FTA_SSL.2,SFR
+FTA_SSL.3,The TSF shall terminate an interactive session after a [assignment: time interval of user inactivity].,FTA_SSL.3,SFR
+FTA_SSL.4,,FTA_SSL.4,SFR
+FTA_TAB.1,,FTA_TAB.1,SFR
+FTA_TAH.1,,FTA_TAH.1,SFR
+FTA_TSE.1,The TSF shall be able to deny session establishment based on [assignment: attributes].,FTA_TSE.1,SFR
+FTP_ITC.1,"FTP_ITC.1.1 The TSF shall provide a communication channel between itself and another trusted IT product that is logically distinct from other communication channels and provides assured identification of its end points and protection of the channel data from modification or disclosure. FTP_ITC.1.2 The TSF shall permit [selection: the TSF, another trusted IT product] to initiate communication via the trusted channel. FTP_ITC.1.3 The TSF shall initiate communication via the trusted channel for [assignment: list of functions for which a trusted channel is required].",FTP_ITC.1,SFR
+FTP_TRP.1,"FTP_TRP.1.1 The TSF shall provide a communication path between itself and [selection: remote, local] users that is logically distinct from other communication paths and provides assured identification of its end points and protection of the communicated data from [selection: modification, disclosure, [assignment: other types of integrity or confidentiality violation]]. FTP_TRP.1.2 The TSF shall permit [selection: the TSF, local users, remote users] to initiate communication via the trusted path. FTP_TRP.1.3 The TSF shall require the use of the trusted path for [selection: initial user authentication, [assignment: other services for which trusted path is required]].",FTP_TRP.1,SFR

@@ -1,0 +1,50 @@
+TO DO
+
+Security Functional Requirements
+--------------------------------
+
+Focus on web application platform first.
+
+1. Create full data set of security components in NODE.Nodes.csv. Suggest walking the Threat Tree countermeasures to generate list.
+
+2. Define full list of security requirements packages (SRPs) in NODE.Packages.csv.
+
+3. Define which SFRs make up each SRP in REL.Packages.csv. Use the existing CC SFRs for starting point.
+
+4. Load the remaining SFR requirements text from the CC into NODE.RequirementText.csv.
+
+5. Tweak the SFR requirements text in NODE.RequirementText.csv to be more readily acceptable.
+
+6. Create a version of rebuild.sh to add new data to database.
+
+7. Add additional SRPs for additional platforms (adjusting like Wu).
+
+8. Augment or replace CC SFR data set with a community-driven version.
+
+9. Determine which applications need their own set of SFR data. Prioritize the list. Work the list.
+Data could replace or be appended to existing data.
+
+Threat Model Countermeasures
+----------------------------
+
+See example STRIDE Attack Tree Mitigations.xlsx, and Threat Modeling Appendix B.
+See example entry for Spoof.Client.ObtainCredentials.Transit. 
+None of this is implemented in neo4j initially.
+Spreadsheet provided for planning and conceptual reference only.
+
+1. Determine which treat/attack tree to use. It must have countermeasures associated with each attack. 
+The countermeasures from Threat Modeling Appendix B could be used as a starting point.
+Countermeasures may depend on platform. Assume typical web application for starters, adding additional platforms later.
+
+2. Construct data tables. First, countermeasures should probably consist of platforms (webApp), consisting of security components from NODE.Nodes.csv.
+
+3. Such a spreadsheet, or data table, should be used to help map out which SFRs apply to each countermeasure, which may result in the definition of a new security component in NODE.Nodes.csv. Goals and Tactics from Preschern should inform enumeration of SFRs. Use Wu to delineate based upon platform. Applicable security architecture and design patterns should be noted and examined for completeness of the security component in NODE.Packages.csv and REL.Packages.csv.
+
+4. Once the countermeasures files are completed for webApp, augment for additional platforms.
+
+Reporting Extras
+----------------
+
+1. If not using CC SFRs, then provide cross-reference to NIST 800-53 and ISO 27001 for each SFR.
+
+
